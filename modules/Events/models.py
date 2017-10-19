@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 class Event(models.Model):
-	id_event = models.AutoField(primary_key=True,unique=True)
+	#id_event = models.AutoField(primary_key=True,unique=True)
 	date_time = models.DateTimeField(blank=True, null=False)
 	lat = models.FloatField(max_digits=3,decimal_places=4)
 	lon = models.FloatField(max_digits=3,decimal_places=4)
@@ -17,7 +17,7 @@ class Event(models.Model):
 
 
 class Comment(models.Model):
-	id_comment = models.AutoField(primary_key=True,unique=True)
+	#id_comment = models.AutoField(primary_key=True,unique=True)
 	id_event = models.ForeingKey(Event)
 	comment = models.CharField(max_length=150)
 
