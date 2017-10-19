@@ -49,6 +49,7 @@ THIRD_PACKAGE_APPS = [
     'django_filters',
 ]
 '''
+AUTH_USER_MODEL = "Users.User"
 
 INSTALLED_APPS = DJANGO_APPS + OUR_APPS #+ THIRD_PACKAGE_APPS
 
