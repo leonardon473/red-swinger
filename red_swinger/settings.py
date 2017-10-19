@@ -43,15 +43,15 @@ OUR_APPS = [
     'modules.Posts',
     'modules.Users'
 ]
-'''
+
 THIRD_PACKAGE_APPS = [
     'rest_framework',
-    'django_filters',
+    #'django_filters',
 ]
-'''
+
 AUTH_USER_MODEL = "Users.User"
 
-INSTALLED_APPS = DJANGO_APPS + OUR_APPS #+ THIRD_PACKAGE_APPS
+INSTALLED_APPS = DJANGO_APPS + OUR_APPS + THIRD_PACKAGE_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -76,7 +76,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-            ],
+            ],            
         },
     },
 ]
